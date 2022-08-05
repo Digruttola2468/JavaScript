@@ -1,39 +1,23 @@
 const title = document.querySelector("h1");
-const parrafo = document.querySelector("p");
-const classParrafo = document.querySelector(".parrafo");
-const idParrafo = document.querySelector("#pid");
-const input = document.querySelector("input");
+const inputValor1 = document.querySelector("#calculo1");
+const inputValor2 = document.querySelector("#calculo2");
+const btnCalcular = document.querySelector("#btnCalcular");
 
-print(title);
-print(parrafo);
-print(classParrafo);
-print(idParrafo);
-print(input)
+console.log(inputValor1);
 
-function print(text){
-    console.log(text)
+//Una de las formas de escuchar los elementos
+function btnOnClick(){
+    let valor1 = Number(inputValor1.value);
+    let valor2 = Number(inputValor2.value);
+
+    let resultado = valor1 + valor2;
+    console.log(resultado)
+
+    //Creamos el Elemento parrafo
+    const parrafo = document.createElement("p");
+    parrafo.innerText = resultado;
+
+    //Agregamos el parrafo al body
+    const body = document.querySelector("body");
+    body.append(parrafo);
 }
-
-title.innerHTML = "Patito <br> Feo";
-//title.innerText = "Patito <br> Feo";
-
-//Get
-print(title.getAttribute("titleh1"));
-//Set
-title.setAttribute("class","Rojo")
-//Add Remove
-title.classList.add("Verde");
-//title.classList.remote("Rojo");
-
-input.value = "Digrutt"
-
-
-print(document.createElement("span"));
-//Create
-const image = document.createElement("img");
-//Add Atribute
-image.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9xqsZF_yYunSeg9vuq2UBWCGuuID6B7T1DCX2UQP&s")
-//Add to idParrafo
-idParrafo.append(image);
-
-print(image);
