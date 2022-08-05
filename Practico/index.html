@@ -9,16 +9,16 @@
 <body>
     <h1>Manipulacion DOM</h1>
 
-    <input id="calculo1" type="text" placeholder="Ingrese un valor">
+    <!--Se recarga la pagina al utilizar una funcion form-->
+    <form id="form">
+        <input id="calculo1" type="text" placeholder="Ingrese un valor">
+        <input id="calculo2" type="text" placeholder="Ingrese un valor">
+        
+        <!--Dentro del form interpreta al ultimo boton como submit-->
+        <!--Pero si agregamos que el tipo va a ser button no se modificara por un submit-->
+        <button type="button" id="btnCalcular">Calcular</button>    
+    </form>
     
-    <!-- <input onchange="console.log('cambio del input');" id="calculo2" type="text" placeholder="Ingrese un valor"> -->
-    <input id="calculo2" type="text" placeholder="Ingrese un valor">
-    
-    <!--  <button id="btnCalcular" onclick="console.log('Click del boton')">Calcular</button> -->
-    <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
-
-    <p></p>
-
     <!-- Invocamos codigo JS del archivo codigo.js dentro del HTML -->
     <script src="./codigo.js"></script>
 </body>
