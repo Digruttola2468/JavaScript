@@ -1,0 +1,2 @@
+# ECMAScript
+Es una especificación de lenguaje de scripting en la que se basa JavaScript y Ecma International está a cargo de estandarizar este idioma artificial. Actualmente, JavaScript puede ser interpretado y procesado en varias plataformas, por lo que regirse a un estándar es fundamental para el desarrollo de esta tecnología de programación.
