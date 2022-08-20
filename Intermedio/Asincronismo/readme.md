@@ -104,3 +104,24 @@ El código de estado (status codes) sirve para describir el estado de la petici�
 - 403 → Forbidden → Indica que no tenemos acceso a ese recurso aunque se esté autenticado.
 - 404 → Not Found → Indica que no existe el recurso que se está intentando acceder.
 - 500 → Internal Server Error → Indica que algo falló, es un error que retorna el servidor cuando la solicitud no pudo ser procesada.
+
+# Promesas
+El objeto Promise representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante.
+
+Una Promesa (Promise) es un proxy de un valor que no necesariamente se conoce cuando se crea la promesa.
+Le permite asociar controladores con el valor eventual de éxito o el motivo de falla de una acción asíncrona.
+
+**Proxy** es una computadora que actua como un intermediador entre el cliente y el servidor. 
+
+<img src="https://tudotecnologia.net/wp-content/uploads/2022/03/What-is-proxy-server-featured-BR.jpg" alt="Proxy" width=50%>
+
+Promesas tienen 3 estados:
+- Pendiente
+- Cumplido (ha regresado la informacion)
+- Rechazado
+
+Una promesa pendiente puede cumplirse con un valor o rechazarse con un motivo (error).Cuando ocurre cualquiera de estas opciones, se llama a los controladores asociados en cola por el método then de una promesa. Si la promesa ya se ha cumplido o rechazado cuando se adjunta un manejador correspondiente, se llamará al manejador, por lo que no existe una condición de carrera entre la finalización de una operación asíncrona y la conexión de sus manejadores.
+
+![Image](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png)
+
+[Promise +info](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
