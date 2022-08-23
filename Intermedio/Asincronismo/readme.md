@@ -155,3 +155,9 @@ Cuando se llama a una función `async`, esta devuelve un elemento [Promise](http
 Una función `async` puede contener una expresión [await](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await), la cual pausa la ejecución de la función asíncrona y espera la resolución de la `Promise` pasada y, a continuación, reanuda la ejecución de la función `async` y devuelve el valor resuelto.
 
 ![Asynchronous TypeScript](https://www.johnpapa.net/content/images/2020/02/async-ts-1.png)
+
+# Try and Catch
+🚨 Importante recordar que la estructura de `async/await` se compone por las palabras reservadas `async` y `await`:
+
+1. La palabra `async` se coloca antes de la función (la otra forma es con funciones flecha en que el `async` va antes que los argumentos).
+2. La palabra `await` se utiliza dentro de las funciones `async`.
