@@ -134,3 +134,24 @@ Una promesa pendiente puede cumplirse con un valor o rechazarse con un motivo (e
 
 Un origen tiene `dominio/protocolo/puerto`, un origen cruzado denominado “Cross Origin” es la palabra que se utiliza para denominar el tipo de peticiones que se realizan a un dominio diferente del dominio de origen desde donde se realiza la petición.
 Así que si se coloca cors, indica que se permiten ciertas solicitudes predeterminadas de origen cruzado como GET y POST para salvaguardar y evitar manipulaciones maliciosas. En el enlace detallan más sobre el concepto de Cors [aqui](https://javascript.info/fetch-crossorigin)
+
+# Funciones Asincronas
+La declaración de función async define una función asíncrona, la cual devuelve un objeto `AsyncFunction`.
+
+#### Sintaxis
+```JS
+async function name([param[, param[, ... param]]]) {
+   statements
+}
+```
+
+#### Parametros
+`name`: El nombre de la funcion.
+`param`: El nombre de un argumento que se debe pasar a la funcion.
+`statements`: Las declaraciones que conforman el cuerpo de la funcion.
+
+Cuando se llama a una función `async`, esta devuelve un elemento [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise). Cuando la función `async` devuelve un valor, `Promise` se resolverá con el valor devuelto. Si la función `async` genera una excepción o algún valor, `Promise` se rechazará con el valor generado.
+
+Una función `async` puede contener una expresión [await](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await), la cual pausa la ejecución de la función asíncrona y espera la resolución de la `Promise` pasada y, a continuación, reanuda la ejecución de la función `async` y devuelve el valor resuelto.
+
+![Asynchronous TypeScript](https://www.johnpapa.net/content/images/2020/02/async-ts-1.png)
