@@ -161,3 +161,23 @@ Una función `async` puede contener una expresión [await](https://developer.moz
 
 1. La palabra `async` se coloca antes de la función (la otra forma es con funciones flecha en que el `async` va antes que los argumentos).
 2. La palabra `await` se utiliza dentro de las funciones `async`.
+
+# Generators
+Un generador en JavaScript consta de una función generadora que muestra un objeto iterable Generator. La palabra reservada yield se usa para pausar y reanudar una función generadora.
+
+```JS
+function* generator() {
+    yield 1;
+    yield 2;
+    yield 3; 
+}
+
+const gen = generator();
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+```
+
+Fuente: [aquí](https://www.digitalocean.com/community/tutorials/understanding-generators-in-javascript-es)
+
