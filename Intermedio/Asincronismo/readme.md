@@ -125,3 +125,12 @@ Una promesa pendiente puede cumplirse con un valor o rechazarse con un motivo (e
 ![Image](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png)
 
 [Promise +info](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+# Fetch Post
+
+⚠️ Hay permisos que se deben tomar en cuenta para que el intercambio sea seguro, hay que especificar el modo (mode), aquí se indica si se permite solicitudes de origen cruzado.
+
+🔀 ¿Qué es un origen cruzado?
+
+Un origen tiene `dominio/protocolo/puerto`, un origen cruzado denominado “Cross Origin” es la palabra que se utiliza para denominar el tipo de peticiones que se realizan a un dominio diferente del dominio de origen desde donde se realiza la petición.
+Así que si se coloca cors, indica que se permiten ciertas solicitudes predeterminadas de origen cruzado como GET y POST para salvaguardar y evitar manipulaciones maliciosas. En el enlace detallan más sobre el concepto de Cors [aqui](https://javascript.info/fetch-crossorigin)
